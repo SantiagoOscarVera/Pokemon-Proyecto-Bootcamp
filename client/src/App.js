@@ -4,6 +4,8 @@ import LandingPage from './Components/LandingPage';
 import Home from './Components/Home';
 import PokemonDetail from "./Components/PokemonDetail";
 import Form from './Components/Form';
+import axios from "axios";
+axios.defaults.baseURL = "http://localhost:3001/";
 
 
 

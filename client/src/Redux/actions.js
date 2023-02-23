@@ -16,7 +16,7 @@ export const DELETE_CHARACTER   = "DELETE_CHARACTER"
 export const getAllCharacters = () => { 
     return async function (dispatch) { 
         try {
-            const response = await axios.get( "http://localhost:3001/pokemons") 
+            const response = await axios.get( "/pokemons") 
             const characters = response.data;
             dispatch({ 
 
@@ -36,7 +36,7 @@ export const getAllCharacters = () => {
 export const postCharacters = (character) => { 
     return async function (dispatch) { 
         try {
-            const response = await axios.post( "http://localhost:3001/pokemons", character) 
+            const response = await axios.post( "/pokemons", character) 
             const mensaje = response.data;
             dispatch({ 
 
@@ -56,7 +56,7 @@ export const postCharacters = (character) => {
 export function buscadorPokemons (name) {
     return async function (dispatch) { 
         try {
-            const info = await axios.get(`http://localhost:3001/pokemons?name=${name}`) 
+            const info = await axios.get(`/pokemons?name=${name}`) 
             return dispatch({ 
 
             type:   GET_NAME_POKEMONS,
@@ -75,7 +75,7 @@ export function buscadorPokemons (name) {
 export function getAllTypes() {
 	return async function (dispatch) {
 		try {
-			const allTypes = await axios.get("http://localhost:3001/types"); 
+			const allTypes = await axios.get("/types"); 
 			return dispatch({
 
 				type: GET_ALL_TYPES,
@@ -132,7 +132,7 @@ export function getPokemonDetail(id) {
 		});
 		try {
             
-			const pokeInfoId = await axios.get(`http://localhost:3001/pokemons/${id}`) 
+			const pokeInfoId = await axios.get(`/pokemons/${id}`) 
 			
             return dispatch({
 				type: GET_POKEMON_DETAILS,  
