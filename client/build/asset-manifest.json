@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1b5607cc.chunk.css",
+    "main.js": "/static/js/main.ba151f64.chunk.js",
+    "main.js.map": "/static/js/main.ba151f64.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b52fed40.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b52fed40.js.map",
+    "static/js/2.ac8cb4a5.chunk.js": "/static/js/2.ac8cb4a5.chunk.js",
+    "static/js/2.ac8cb4a5.chunk.js.map": "/static/js/2.ac8cb4a5.chunk.js.map",
+    "static/js/3.e0a11922.chunk.js": "/static/js/3.e0a11922.chunk.js",
+    "static/js/3.e0a11922.chunk.js.map": "/static/js/3.e0a11922.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.1b5607cc.chunk.css.map": "/static/css/main.1b5607cc.chunk.css.map",
+    "static/js/2.ac8cb4a5.chunk.js.LICENSE.txt": "/static/js/2.ac8cb4a5.chunk.js.LICENSE.txt",
+    "static/media/PokemonDetail.module.css": "/static/media/Detail.587495ca.jpg",
+    "static/media/Home.module.css": "/static/media/HomeAvesBlanco.40dd53ec.jpg",
+    "static/media/LandingPage.module.css": "/static/media/Landingpage.544444d6.webp",
+    "static/media/Form.module.css": "/static/media/creacion.b184b235.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b52fed40.js",
+    "static/js/2.ac8cb4a5.chunk.js",
+    "static/css/main.1b5607cc.chunk.css",
+    "static/js/main.ba151f64.chunk.js"
+  ]
+}

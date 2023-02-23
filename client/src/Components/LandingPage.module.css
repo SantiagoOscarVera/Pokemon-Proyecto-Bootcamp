@@ -1,0 +1,57 @@
+.container {
+    height: 100vh; /* largo  */
+    width: 100vw;/* ancho */
+    padding: 2rem; /* 2 rem es una medida con respecto al dispositivo en el que estas. es un margen */ 
+	text-align: center; /* LO PUSE PARA CENTRAR EL INFO CONTAINER, VER DE SACARLO O NO */
+    background-image: url(../Images/Landingpage.webp);
+    background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.infoContainer { /* contenedor tranparente */
+  	height: 20vh; /* vh te completa toda la pantalla  */
+	width: 30%;  /* cuando uno ve que esta adentro del container, ponerle casi siempre el 100% */
+	margin: 0px auto; /* LO PUSE PARA CENTRAR EL INFO CONTAINER, VER DE SACARLO O NO */
+	display: flex; /* me centra el contenido del div */
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; /* me centra el contenido del div */
+	gap: 30px; 
+	
+
+	color: #fff;
+	background-color: rgba(128, 128, 128, 0.3);
+	border: solid 1px rgba(128, 128, 128, 0.3);
+	border-radius: 100px;	
+	backdrop-filter: blur(5px); 
+}
+
+.btn { /* boton */
+    	padding: 2rem;    
+		/* padding: 10px 20px; */
+        color: rgb(223, 23, 23);
+        border: solid 1px #fff;
+        border-radius: 100px;
+        background: rgb(56, 26, 228);
+		
+		/* font-family: impact, sans-serif; */
+  font-size: 18px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-align: center;
+  letter-spacing: 2.1px;
+  line-height: 18px;
+    
+}
+
+
+.btn:hover {  /* efecto para cuando pasemos por encima del boton */
+	background-color: #f00000;
+	border: solid 1px #1d10db;
+	color: rgb(254, 255, 246);
+	box-shadow: 3px 3px 25px 11px rgb(239, 239, 245); /* para darle sombra */
+}
