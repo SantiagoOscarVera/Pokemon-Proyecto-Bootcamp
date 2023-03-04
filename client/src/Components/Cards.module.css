@@ -1,4 +1,4 @@
-.container {
+/* .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -11,5 +11,25 @@
     margin-left: 10rem;
     margin-right: 10rem;
     margin-top: 3rem;
+} */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3rem;
+    max-width: 100%;
 }
+
+
+
+
 
