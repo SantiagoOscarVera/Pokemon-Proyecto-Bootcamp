@@ -77,10 +77,11 @@
 		height: 40px;
 	}
 	
-	.btnHome {
-		top: auto;
-		left: auto;
-		/* width: 100%; */
-		margin-top: 10px;
-	}
+	.btnHome 
+  {
+    left: 70px;
+    margin-top: 10px;
+    top: -35px;
+    padding: 1rem;
+}
 }
