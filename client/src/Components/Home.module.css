@@ -157,7 +157,7 @@
     display: flex;
     place-items: center;
     border-radius: 5px;
-    border: solid 2px rgba(0, 0, 0, 0.3);
+    /* border: solid 2px rgba(0, 0, 0, 0.3); */
     max-width: 90%;
     margin: 10px auto;
     padding: 10px;
