@@ -1,12 +1,12 @@
-.container {
+/* .container {
 
-  height: 50vh; /* vh te completa toda la pantalla  */
-	width: 250px;  /* cuando uno ve que esta adentro del container, ponerle casi siempre el 100% */
-	/* margin: 0px auto; */ /* LO PUSE PARA CENTRAR EL INFO CONTAINER, VER DE SACARLO O NO */
-	display: flex; /* me centra el contenido del div */
+  height: 50vh; 
+	width: 250px;  
+	
+	display: flex; 
 	flex-direction: column;
 	align-items: center;
-	justify-content: center; /* me centra el contenido del div */
+	justify-content: center; 
 	gap: 30px; 
 	
 
@@ -23,8 +23,7 @@
     width: 80px;
     height: 70px;
 
-/*     width: 70%;
-padding: 20px 0px; */
+
   }
 
   .container:hover {
@@ -45,9 +44,7 @@ padding: 20px 0px; */
   width: 100%;
 }  
 
-/* .name {
-   
-  } */
+
 
   .tipo {
     padding-top: 1rem;
@@ -64,4 +61,79 @@ padding: 20px 0px; */
     border-radius: 10px;
     background-color: rgb(241, 175, 175);
 
+} */
+
+.container {
+	height: 50vh;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	color: #fff;
+	background-color: rgba(128, 128, 128, 0.3);
+	border: solid 1px rgba(255, 255, 255, 0.3);
+	border-radius: 10px;
+	backdrop-filter: blur(5px);
+}
+
+.container img {
+	position: relative;
+	bottom: 1.8rem;
+	width: 80px;
+	height: 70px;
+}
+
+.container:hover {
+	background-position: right center;
+	transform: scale(1.05);
+	box-shadow: 10px 10px 20px #ffffff, -10px -10px 20px #ffffff;
+}
+
+.container2 {
+	bottom: 1rem;
+	position: relative;
+	align-items: center;
+	font-family: "Chakra Petch", sans-serif;
+	margin: center;
+}
+
+.container3 {
+	width: 100%;
+}
+
+.tipo {
+	padding-top: 1rem;
+	color: #000000;
+	font-style: bold;
+}
+
+.btnHome {
+	padding: 1rem;
+	cursor: pointer;
+	position: relative;
+	border-radius: 10px;
+	background-color: rgb(241, 175, 175);
+	margin-top: 10px;
+}
+
+/* Media queries para Samsung Galaxy S8+ */
+@media only screen and (max-width: 414px) {
+	.container {
+		width: 100%;
+	}
+	
+	.container img {
+		bottom: 0;
+		width: 50px;
+		height: 40px;
+	}
+	
+	.btnHome {
+		top: auto;
+		left: auto;
+		width: 100%;
+		margin-top: 10px;
+	}
 }
