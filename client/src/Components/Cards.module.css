@@ -17,19 +17,40 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     justify-content: space-evenly;
     justify-items: center;
     align-content: space-evenly;
     align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10rem;
+    margin-right: 10rem;
     margin-top: 3rem;
-    max-width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
 
+@media only screen and (max-width: 480px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 
 
 
