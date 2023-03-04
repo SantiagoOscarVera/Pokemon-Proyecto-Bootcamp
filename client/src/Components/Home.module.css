@@ -51,7 +51,7 @@
 } */
 
 /* Estilos para dispositivos móviles */
-@media only screen and (max-width: 414px) {
+/* @media only screen and (max-width: 414px) {
     .container {
       background-size: contain;
     }
@@ -76,7 +76,7 @@
     }
   }
   
-  /* Estilos generales */
+  
   .container {
     background-image: url(../Images/HomeAvesBlanco.jpg);
     display: flex;
@@ -126,4 +126,95 @@
     position: absolute;
     border-radius: 10px;
     background-color: rgb(250, 224, 77);
+  } */
+
+/* Estilos generales */
+.container {
+    background-image: url(../Images/HomeAvesBlanco.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
   }
+  
+  .menuContainer {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 5px rgba(253, 158, 158, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: solid 5px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .paginatedList {
+    display: flex;
+    place-items: center;
+    border-radius: 5px;
+    border: solid 2px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .pokeListContainer {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+  }
+  
+  .pokeList {
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .btnForm button {
+    top: 20px;
+    right: 50px;
+    width: max-content;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(250, 224, 77);
+    margin: 10px auto;
+    display: block;
+  }
+  
+  /* Media queries para Samsung Galaxy S8+ */
+  @media only screen and (max-width: 414px) {
+    .menuContainer {
+      max-width: 100%;
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+      backdrop-filter: none;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .paginatedList {
+      max-width: 100%;
+      border: none;
+      border-radius: 0;
+    }
+    
+    .btnForm button {
+      top: auto;
+      right: auto;
+      width: 100%;
+      margin-top: 10px;
+      position: static;
+      border-radius: 0;
+    }
+  }  
