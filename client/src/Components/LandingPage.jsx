@@ -7,7 +7,7 @@ const LandingPage = () => {
         <div className={estilos.container}>
             <div className={estilos.infoContainer} >   
                 <Link to="/home">    
-                <button className={estilos.btn}> LABORATORIO POKEMON    </button>
+                <button className={estilos.btn}> LABORATORIO POKÉMON    </button>
                 </Link> 
             </div>  
         </div>
