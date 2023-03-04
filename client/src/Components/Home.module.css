@@ -1,12 +1,8 @@
-.container {
-	/* height: 100vh; */ 
-    /* width: 100%; */
+/* .container {
     background-image: url(../Images/HomeAvesBlanco.jpg);
-    /* background-size: cover; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-bottom: 40px; */
     width: 100%;
     min-height: 100vh;
     background-position: center;
@@ -38,13 +34,12 @@
 
 .pokeList {
 	display: grid;
-	/* grid-template-columns: repeat(auto-fill, minmax(200px, 6fr)); */
 	place-items: center;
 	gap: 20px;
 }
 
 .btnForm button {
-    top: 20px; /* contando desde el margen de ariiba 50 pixeles desde el borde superior de la pantalla */
+    top: 20px; 
     right: 50px;
     width:max-content;
     padding: 1rem;
@@ -53,4 +48,82 @@
     border-radius: 10px;
     background-color: rgb(250, 224, 77);
 
-}
+} */
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 414px) {
+    .container {
+      background-size: contain;
+    }
+    
+    .menuContainer {
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+    }
+    
+    .paginatedList {
+      border: none;
+      border-radius: 0;
+    }
+    
+    .btnForm button {
+      top: auto;
+      right: auto;
+      width: 100%;
+      margin-top: 10px;
+      position: static;
+    }
+  }
+  
+  /* Estilos generales */
+  .container {
+    background-image: url(../Images/HomeAvesBlanco.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+  }
+  
+  .menuContainer {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 5px rgba(253, 158, 158, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: solid 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .paginatedList {
+    display: flex;
+    place-items: center;
+    border-radius: 5px;
+    border: solid 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .pokeListContainer {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+  }
+  
+  .pokeList {
+    display: grid;
+    place-items: center;
+    gap: 20px;
+  }
+  
+  .btnForm button {
+    top: 20px;
+    right: 50px;
+    width:max-content;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(250, 224, 77);
+  }
