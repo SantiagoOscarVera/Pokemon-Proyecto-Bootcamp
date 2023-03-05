@@ -1,4 +1,5 @@
 import React from "react";
+import estilos from "./Paginated.module.css"
 
 
 export const Paginated = ({ pokemonsPage, everyPokemons, page }) => { 
