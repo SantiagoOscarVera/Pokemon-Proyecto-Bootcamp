@@ -62,19 +62,3 @@
     background-color: rgb(241, 175, 175);
 
 }
-
-
-
-/* Media queries para Samsung Galaxy S8+ */
-/* @media only screen and (max-width: 300px) {
-	
-	
-	.btnDelete 
-{
-  left: 100px;
-  margin-top: 10px;
-  padding: 1rem;
-  top: -25px;
-  margin-right: 10px;
-}
-} */

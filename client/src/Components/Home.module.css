@@ -65,14 +65,15 @@
   
   @media only screen and (max-width: 637px) {
     .menuContainer {
-      max-width: 100%;
-      border-radius: 0;
-      border: none;
-      box-shadow: none;
-      backdrop-filter: none;
-      background-color: rgba(0, 0, 0, 0.8);
+      max-width: 90%;
+      border-radius: 10px;
+      border: solid 5px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 10px 5px rgba(253, 158, 158, 0.5);
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 10px;
     }
-    
+
     .paginatedList {
       max-width: 100%;
       border: none;
@@ -85,7 +86,8 @@
       width: 100%;
       margin-top: 10px;
       position: static;
-      border-radius: 0;
+      border-radius: 10px;
+      background-color: rgb(250, 224, 77);
     }
 
     .pokeListContainer {
@@ -98,36 +100,3 @@
       padding: 5px;
     }
   }  
-
-  
-
-/* @media only screen and (max-width: 414px) {
-    .menuContainer {
-      max-width: 100%;
-      border-radius: 0;
-      border: none;
-      box-shadow: none;
-      backdrop-filter: none;
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 5px;
-    }
-    
-    .paginatedList {
-      max-width: 100%;
-      border: none;
-      border-radius: 0;
-      padding: 5px;
-    }
-    
-    .pokeListContainer {
-      padding-top: 5px;
-    }
-    
-    .pokeList {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 10px;
-      padding: 5px;
-    }
-    
-
-  } */
