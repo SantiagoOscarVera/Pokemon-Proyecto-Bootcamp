@@ -33,11 +33,6 @@
     padding: 10px;
     flex-wrap: wrap;
   }
-
-  .paginatedList.active {
-    background-color: rgb(230, 17, 17);
-    color: #fff;
-  }
   
   .pokeListContainer {
     width: 100%;
