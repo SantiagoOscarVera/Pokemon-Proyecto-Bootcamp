@@ -9,6 +9,12 @@
     
 }
 
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 .titleSubmit{
     display: flex;
     flex-direction: row;
@@ -21,21 +27,26 @@
     width: 50%;
     display: flex;
     color: rgb(0, 0, 0);
-    /* font-weight: lighter; */
     justify-content: center;
-    /* text-shadow: 2px 2px 2px rgb(25, 25, 25); */
     margin-top: 10px;
     border: solid 2px rgb(0, 0, 0);
     border-radius: 10px;
     background: rgb(255, 15, 15);
 }
 
+.btnHome button {
+    top: 10px; 
+    left: 50px;
+    width:max-content;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(250, 224, 77);
+
+}
+
 .form{
-    /* display: flex; */
-/*     flex-direction: row;
-    justify-content:center;
-    align-items: center; */
-    
     border: solid 1px rgb(0, 0, 0);
     border-radius: 10px;
     
@@ -48,15 +59,12 @@
 }
 
 .range{
-    /* height: 10%; */
     max-height: 50px;
     width: 45%;
     display: flex;
     align-items: center;
     color: rgb(0, 0, 0);
-    /* font-weight: lighter; */
     justify-content: space-evenly;
-    /* text-shadow: 2px 2px 2px rgb(25, 25, 25); */
     margin-top: 3px;
     border: solid 2px rgb(0, 0, 0);
     border-radius: 10px;
@@ -68,30 +76,25 @@
 }
 
 .type {
-    
-    /* width: 10%; */
     border-radius: 20px;
     border: solid 2px rgba(0, 0, 0, 0.685);
 
 }
 
-.btn { /* boton */
+.btn { 
     padding: 1rem;    
-    /* padding: 10px 20px; */
     color: rgb(223, 23, 23);
     border: solid 3px rgb(0, 0, 0);
     border-radius: 100px;
     background: rgb(255, 251, 31);
-    
-    /* font-family: impact, sans-serif; */
-font-size: 18px;
-color: #000000;
-font-style: normal;
-font-weight: normal;
-font-variant: normal;
-text-align: center;
-letter-spacing: 2.1px;
-line-height: 18px;
+    font-size: 18px;
+    color: #000000;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-align: center;
+    letter-spacing: 2.1px;
+    line-height: 18px;
 
 }
 
@@ -103,14 +106,64 @@ color: rgb(254, 255, 246);
 box-shadow: 3px 3px 25px 11px rgb(8, 8, 221); /* para darle sombra */
 }
 
-.btnHome button {
-    top: 20px; /* contando desde el margen de ariiba 50 pixeles desde el borde superior de la pantalla */
-    left: 50px;
-    width:max-content;
-    padding: 1rem;
-    cursor: pointer;
-    position: absolute;
-    border-radius: 10px;
-    background-color: rgb(250, 224, 77);
 
-}
+
+/* RESPONSIVE */
+
+/* @media screen and (max-width: 660px) {
+  
+    .createTitle {
+      font-size: 1.2rem;
+    }
+  } */
+
+  /* @media screen and (max-width: 660px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .titleSubmit {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .createTitle {
+      font-size: 1.2rem;
+    }
+  }
+  
+
+  
+  @media only screen and (max-width: 660px) {
+    .btnForm button {
+        top: auto;
+        left: auto;
+        width: 100%;
+        margin-top: 10px;
+        position: static;
+        border-radius: 10px;
+        background-color: rgb(250, 224, 77);
+      }
+  }   */
+
+  @media screen and (max-width: 660px) {
+    .createTitle {
+      width: 80%;
+      margin-top: 70px;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  
+    .btnHome button {
+      top: auto;
+      left: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      /* width: 30%; */
+    }
+  }
+  
+
+  
