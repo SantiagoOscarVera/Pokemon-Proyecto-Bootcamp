@@ -66,16 +66,8 @@
 
 
 /* Media queries para Samsung Galaxy S8+ */
-/* @media only screen and (max-width: 414px) {
-	.container {
-		width: 100%;
-	}
+@media only screen and (max-width: 360px) {
 	
-	.container img {
-		bottom: 0;
-		width: 50px;
-		height: 40px;
-	}
 	
 	.btnDelete 
   {
@@ -84,4 +76,4 @@
     top: -35px;
     padding: 1rem;
 }
-} */
+}
