@@ -66,7 +66,7 @@
 
 
 /* Media queries para Samsung Galaxy S8+ */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 300px) {
 	
 	
 	.btnDelete 
