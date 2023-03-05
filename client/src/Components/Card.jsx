@@ -16,7 +16,7 @@ const Card = ({id, image, name, types})=>{
 
 return( 
     <div className={estilos.container}> 
-            <button className={estilos.btnHome} onClick={handleClick}>X</button>  
+            <button className={estilos.btnDelete} onClick={handleClick}>X</button>  
 
         <li className={estilos.container2}>
 			<div className={estilos.container3}>
