@@ -1,4 +1,5 @@
 .numerosPaginado{
-        background-color: rgb(230, 17, 17);
-        color: #fff;
+    background-color: rgb(250, 224, 77);
+    cursor: pointer;
+    color: rgb(20, 18, 18);
 }
