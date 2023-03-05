@@ -9,10 +9,10 @@ export const Paginated = ({ pokemonsPage, everyPokemons, page }) => {
   }
   return (
     <nav > 
-      <div className={estilos.numerosPaginado}>
+      <div>
         {pageNumber &&
           pageNumber.map((number) => (
-            <button onClick={() => page(number)} href="!#" className="button" key={number}>
+            <button onClick={() => page(number)} href="!#" className={estilos.numerosPaginado} key={number}>
               {number}
             </button>
           ))}
