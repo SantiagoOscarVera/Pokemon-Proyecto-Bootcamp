@@ -110,44 +110,6 @@ box-shadow: 3px 3px 25px 11px rgb(8, 8, 221); /* para darle sombra */
 
 /* RESPONSIVE */
 
-/* @media screen and (max-width: 660px) {
-  
-    .createTitle {
-      font-size: 1.2rem;
-    }
-  } */
-
-  /* @media screen and (max-width: 660px) {
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .titleSubmit {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .createTitle {
-      font-size: 1.2rem;
-    }
-  }
-  
-
-  
-  @media only screen and (max-width: 660px) {
-    .btnForm button {
-        top: auto;
-        left: auto;
-        width: 100%;
-        margin-top: 10px;
-        position: static;
-        border-radius: 10px;
-        background-color: rgb(250, 224, 77);
-      }
-  }   */
-
   @media screen and (max-width: 660px) {
     .createTitle {
       width: 80%;
@@ -158,10 +120,11 @@ box-shadow: 3px 3px 25px 11px rgb(8, 8, 221); /* para darle sombra */
   
     .btnHome button {
       top: auto;
-      left: auto;
+      left: 10px;
       margin-top: 10px;
       margin-bottom: 10px;
-      /* width: 30%; */
+      text-align: center;
+      height: 6%;
     }
   }
   

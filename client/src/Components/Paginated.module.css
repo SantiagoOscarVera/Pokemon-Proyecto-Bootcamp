@@ -1,10 +1,14 @@
 .numerosPaginado{
     background-color: rgb(250, 224, 77);
     cursor: pointer;
-    color: rgb(20, 18, 18);
+    color: rgba(20, 18, 18, 0.445);
+    border: 1px solid #0c0c0c;
 }
 
-.numerosPaginado.active {
-    background-color: #333;
-    color: #fff;
-  }
+.numerosPaginado:hover {
+    background-color: rgb(187, 187, 33); /* Se cambia el color de fondo cuando se pasa el cursor por encima del botón */
+}
+
+.numerosPaginado:active {
+    background-color: rgb(179, 161, 60); /* Se cambia el color de fondo mientras el usuario mantiene presionado el botón */
+}
