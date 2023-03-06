@@ -199,3 +199,17 @@
         font-weight: 700;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .btnHome button {
+        top: 1%; 
+        left: 10px;
+        width:max-content;
+        padding: 1rem;
+        cursor: pointer;
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(250, 224, 77);
+    }
+
+}
