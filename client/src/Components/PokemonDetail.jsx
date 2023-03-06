@@ -35,12 +35,13 @@ const PokemonDetail = () => {
 			{loading ? <div><h1>Loading</h1></div> : 
 
 					<div className={estilos.contDetalle}>
+						<h1 className={estilos.name} >{pokemonInfo.name}</h1>
 						<div className={estilos.contDetalleIzq}>
 							<img src={pokemonInfo.image ? pokemonInfo.image : pokemonInfo.img}  />
 						</div>
 
 						<div className={estilos.contDetalleDer}>
-									<h1 className={estilos.name} >{pokemonInfo.name}</h1> 
+									{/* <h1 className={estilos.name} >{pokemonInfo.name}</h1> */} 
 
 																	
 									<p className={estilos.label}>ID: {pokemonInfo.id}</p> 
