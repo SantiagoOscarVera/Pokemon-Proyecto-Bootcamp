@@ -36,6 +36,7 @@
 }
 
 .contDetalleIzq img {
+    margin-right: 10%;
     width: 100%;
     height: auto;
     padding: 1rem;
