@@ -169,16 +169,14 @@
     }
     
     .name {
-    
         text-decoration: underline;
         text-shadow: 3px 3px 25px 11px rgb(212, 15, 15);
+        font-size: 100%;
+    margin-right: 20px;
     }
     
     .type {
         width: 90%;
-        /* border-radius: 40px;
-        border: solid 5px rgba(0, 0, 0, 0.3); */
-    
     }
     
     .typesTitulo {  
