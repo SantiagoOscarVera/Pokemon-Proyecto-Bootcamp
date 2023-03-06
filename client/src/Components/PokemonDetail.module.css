@@ -100,7 +100,7 @@
     color: solid #000000;
     font-weight: 600;
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 765px) {
     
     .btnHome button {
       top: auto;
