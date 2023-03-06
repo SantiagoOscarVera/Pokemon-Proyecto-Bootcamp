@@ -54,7 +54,7 @@ const PokemonDetail = () => {
 
 							<div className={estilos.type}>
 									<h3 className={estilos.typesTitulo}>Type/s:</h3>
-										<TypesPokemonInfo type={pokemonInfo.type} /> 
+										<TypesPokemonInfo className={estilos.label} type={pokemonInfo.type} /> 
 							</div>	
 						</div>
 				</div>
