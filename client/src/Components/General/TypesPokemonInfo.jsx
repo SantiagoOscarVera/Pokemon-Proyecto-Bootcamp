@@ -1,4 +1,5 @@
 import React from "react";
+import estilos from "./TypesPokemonInfo.module.css";
 
 
 const TypesPokemonInfo = ({ type }) => { 
