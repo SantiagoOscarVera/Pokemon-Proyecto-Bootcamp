@@ -91,6 +91,14 @@
     line-height: 18px;
 }
 
+.label{
+    top: auto;
+    text-align: left;
+    margin-left: 3%;
+    /* width: 20px; */
+    color: solid #000000;
+    font-weight: 600;
+}
 @media screen and (max-width: 660px) {
     
     .btnHome button {
