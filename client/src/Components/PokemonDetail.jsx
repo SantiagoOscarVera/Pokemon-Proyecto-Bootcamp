@@ -43,14 +43,14 @@ const PokemonDetail = () => {
 									<h1 className={estilos.name} >{pokemonInfo.name}</h1> 
 
 																	
-									<p>ID: {pokemonInfo.id}</p> 
+									<p className={estilos.label}>ID: {pokemonInfo.id}</p> 
 								
-									<p>HP: {pokemonInfo.hp} </p>
-									<p>Attack:{" "} {pokemonInfo.attack}</p>
-									<p>Defense:{" "} {pokemonInfo.defense}</p>
-									<p>Speed:{" "} {pokemonInfo.speed}</p>
-									<p>Height:{" "} {pokemonInfo.height} m</p>
-									<p>Weight:{" "} {pokemonInfo.weight} kg</p>
+									<p className={estilos.label}>HP: {pokemonInfo.hp} </p>
+									<p className={estilos.label}>Attack:{" "} {pokemonInfo.attack}</p>
+									<p className={estilos.label}>Defense:{" "} {pokemonInfo.defense}</p>
+									<p className={estilos.label}>Speed:{" "} {pokemonInfo.speed}</p>
+									<p className={estilos.label}>Height:{" "} {pokemonInfo.height} m</p>
+									<p className={estilos.label}>Weight:{" "} {pokemonInfo.weight} kg</p>
 
 							<div className={estilos.type}>
 									<h3 className={container.typesTitulo}>Type/s:</h3>
