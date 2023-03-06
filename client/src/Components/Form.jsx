@@ -28,7 +28,7 @@ const Form = () => {
 
 const validateInput = (input)=> {
     const errors ={}; 
-    if(!input.name.length || typeof input.name !== "string") errors.name = "Escriba el nombre de su pokemon"
+    if(!input.name.length || typeof input.name !== "string") errors.name = "Escriba el nombre de su pokémon"
     if(!input.image.length) errors.image = "Debe ingresar una url valida para que se vea la imagen"
     if(!input.hp.length || input.hp > 100 || input.hp < 1 ) errors.hp = "Debe ingresar un hp entre 1 y 100"
     if(!input.attack.length || input.attack > 100 || input.attack < 1) errors.attack = "Debe ingresar un ataque entre 1 y 100"
@@ -36,7 +36,7 @@ const validateInput = (input)=> {
     if(!input.speed.length || input.speed > 100 || input.speed < 1) errors.speed = "Debe ingresar una velocidad entre 1 y 100 km/h"
     if(!input.height.length || input.height > 20 || input.height < 1) errors.height = "Debe ingresar una altura entre 1 y 20 metros"
     if(!input.weight.length || input.weight > 1000 || input.weight < 1) errors.weight = "Debe ingresar un peso entre 1 y 1000 kg"
-    if(!input.type.length ) errors.type = "Debe ingresar al menos un tipo de pokemon"
+    if(!input.type.length ) errors.type = "Debe ingresar al menos un tipo de pokémon"
     return errors
 }
 
@@ -137,71 +137,74 @@ function handleSelect2(event) {
 return (
 
     <div className={estilos.container}>
+        <div className={estilos.container2}>
                     <nav >
 						<Link className={estilos.btnHome} to='/home'> 
 								<button>Go to Home</button>
 						</Link>
 		            </nav> {/* boton que te regresa al home */}
                     
-    <div className={estilos.titleSubmit}>
-            <h1 className={estilos.createTitle}>Create a Pokemon</h1>
-    </div>
+                <div className={estilos.titleSubmit}>
+                        <h1 className={estilos.createTitle}>Create a Pokémon</h1>
+                </div>
+        </div>
+                    
         
         <form className={estilos.form} onSubmit={handleSubmit}>  {/* Creacion de formulario */}
 
 
-            <div className={estilos.range}> {/* imputs */}
+            <div className={estilos.range1}> {/* imputs */}
                 <label className={estilos.label} htmlFor="name">Name:</label>
-                <input type="text" name="name" value={input.name} onChange={handleChange}/> 
-                <p>{errors.name && errors.name}</p> 
+                <input className={estilos.input} type="text" name="name" value={input.name} onChange={handleChange}/> 
+                <p className={estilos.validacion}>{errors.name && errors.name}</p> 
             </div>
 
             <div className={estilos.range}>
 				<label className={estilos.label} htmlFor="image" >Img:</label>
-				<input type="text" name="image" placeholder='Url de tu imagen' value={input.image} onChange={handleChange}/>
-                <p>{errors.image && errors.image}</p>
+				<input className={estilos.inputImg} type="text" name="image" placeholder='Url de tu imagen' value={input.image} onChange={handleChange}/>
+                <p className={estilos.validacion}>{errors.image && errors.image}</p>
             </div>
 
             <div className={estilos.range}>
                 <label className={estilos.label} htmlFor="hp">Hp:</label>
-                <input type="number"  min="0" max="100" name="hp" value={input.hp} onChange={handleChange}/>
-                <p>{errors.hp && errors.hp}</p>
+                <input className={estilos.input} type="number"  min="0" max="100" name="hp" value={input.hp} onChange={handleChange}/>
+                <p className={estilos.validacion}>{errors.hp && errors.hp}</p>
             </div>
 
             <div className={estilos.range}>
                 <label className={estilos.label} htmlFor="attack">Ataque:</label>
-                <input type="number" name="attack" value={input.attack} onChange={handleChange}/>
-                <p>{errors.attack && errors.attack}</p>
+                <input className={estilos.input} type="number" name="attack" value={input.attack} onChange={handleChange}/>
+                <p className={estilos.validacion}>{errors.attack && errors.attack}</p>
             </div>
 
             <div className={estilos.range}>
                 <label className={estilos.label} htmlFor="defense">Defense:</label>
-                <input type="number" name="defense" value={input.defense} onChange={handleChange}/>
-                <p>{errors.defense && errors.defense}</p>
+                <input className={estilos.input} type="number" name="defense" value={input.defense} onChange={handleChange}/>
+                <p className={estilos.validacion}>{errors.defense && errors.defense}</p>
             </div>
 
             <div className={estilos.range}>
                 <label className={estilos.label} htmlFor="speed">Velocidad:</label>
-                <input type="number" name="speed" value={input.speed} onChange={handleChange}/>
-                <p>{errors.speed && errors.speed}</p>
+                <input className={estilos.input} type="number" name="speed" value={input.speed} onChange={handleChange}/>
+                <p className={estilos.validacion}>{errors.speed && errors.speed}</p>
             </div>
 
             <div className={estilos.range}>
                 <label className={estilos.label} htmlFor="height">Altura:</label>
-                <input type="number" name="height" value={input.height} onChange={handleChange}/>
-                <p>{errors.height && errors.height}</p>
+                <input className={estilos.input} type="number" name="height" value={input.height} onChange={handleChange}/>
+                <p className={estilos.validacion}>{errors.height && errors.height}</p>
             </div>
 
             <div className={estilos.range}>
                 <label className={estilos.label} htmlFor="weight">Peso:</label>
-                <input type="number" name="weight" value={input.weight} onChange={handleChange}/>
-                <p>{errors.weight && errors.weight}</p>
+                <input className={estilos.input} type="number" name="weight" value={input.weight} onChange={handleChange}/>
+                <p className={estilos.validacion}>{errors.weight && errors.weight}</p>
             </div>
 
-                <h3 className={estilos.type}>TYPES</h3>
+                <h3 className={estilos.typesTitulo}>Select Type</h3>
 
-                    <div className="container">
-                        <label  htmlFor="type">Type:</label>
+                    <div className={estilos.tipos}>
+                        {/* <label  htmlFor="type">Type:</label> */}
                         <select onChange={(e) => handleSelect(e)}>
                             <option value="none" defaultValue title="">
                                 Select Type(s)
@@ -219,8 +222,12 @@ return (
                                 <option value={t.name}>{t.name}</option>
                                 ))}
                         </select>
-                        <p>{errors.type && errors.type}</p>
+                        
                     </div>
+                    <div>
+                        <p className={estilos.validacion}>{errors.type && errors.type}</p>
+                    </div>
+                    
             <button className={estilos.btn} type="submit">Create</button>
         </form>
     </div>
