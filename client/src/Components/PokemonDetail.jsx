@@ -53,7 +53,7 @@ const PokemonDetail = () => {
 									<p className={estilos.label}>Weight:{" "} {pokemonInfo.weight} kg</p>
 
 							<div className={estilos.type}>
-									<h3 className={container.typesTitulo}>Type/s:</h3>
+									<h3 className={estilos.typesTitulo}>Type/s:</h3>
 										<TypesPokemonInfo type={pokemonInfo.type} /> 
 							</div>	
 						</div>
