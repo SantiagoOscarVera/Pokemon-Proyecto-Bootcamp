@@ -24,6 +24,8 @@ const PokemonDetail = () => {
 	return (
 		<>
 	<div className={estilos.container}>
+
+		<div className={estilos.contenedor2}>
             <nav >
 					<Link className={estilos.btnHome} to='/home'> 
 								<button>Go to Home</button>
@@ -51,12 +53,14 @@ const PokemonDetail = () => {
 									<p>Weight:{" "} {pokemonInfo.weight} kg</p>
 
 							<div className={estilos.type}>
-									<h3>Type/s:</h3>
+									<h3 className={container.typesTitulo}>Type/s:</h3>
 										<TypesPokemonInfo type={pokemonInfo.type} /> 
 							</div>	
 						</div>
-				</div>					
+				</div>
+								
 			}
+		</div>	
 	</div>
 </>)
 } 

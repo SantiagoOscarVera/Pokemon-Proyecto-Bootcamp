@@ -13,6 +13,8 @@
     background-attachment: fixed;
 }
 
+
+
 .contDetalle {
     width: 60%;
     /* margin: 2rem; */
@@ -53,7 +55,7 @@
 }
 
 .btnHome button {
-    top: 50px; /* contando desde el margen de ariiba 50 pixeles desde el borde superior de la pantalla */
+    top: 50px; 
     left: 50px;
     width:max-content;
     padding: 1rem;
@@ -61,7 +63,6 @@
     position: absolute;
     border-radius: 10px;
     background-color: rgb(250, 224, 77);
-
 }
 
 .name {
@@ -75,4 +76,28 @@
     border-radius: 40px;
     border: solid 5px rgba(0, 0, 0, 0.3);
 
+}
+
+.typesTitulo {  
+    border: solid 3px rgb(0, 0, 0);
+    border-radius: 10px;
+    background: rgb(247, 235, 124);
+    font-size: 12px;
+    color: #000000;
+    font-style: normal;
+    font-weight: 100px;
+    font-variant: normal;
+    text-align: center;
+    line-height: 18px;
+}
+
+@media screen and (max-width: 660px) {
+    
+    .btnHome button {
+      top: auto;
+      left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height: 6%;
+    }
 }
