@@ -5,7 +5,7 @@ const TypesPokemonInfo = ({ type }) => {
 	return (
 		<ul >
 			{type?.map((type) => ( 
-				<li key={type.name} value={type.name}>
+				<li className={estilos.label} key={type.name} value={type.name}>
 					{type.name} 
 				</li>
 			))}
