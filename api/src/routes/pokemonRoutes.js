@@ -5,11 +5,11 @@ const axios = require("axios")
 const {Op} = require("sequelize")
 const cors = require("cors")
 
-
+router.use(cors());
 //OBTENER TODOS LOS POKEMON EN RUTA '/' O POR QUERY
 
 
-router.get("/",cors(), async (req, res, next) => {
+router.get("/", async (req, res, next) => {
   let name = req.query.name;
   if (name) {
     name = name.toLowerCase(); 
@@ -154,7 +154,7 @@ router.get("/",cors(), async (req, res, next) => {
 //OBTENER POKEMONS POR PARAMS {ID}
 
 //OBTENER POKEMON DE API POR PARAMS {ID}
-router.get("/:id",cors(), async (req, res, next) => { 
+router.get("/:id", async (req, res, next) => { 
   let id = req.params.id; 
   if (id.length < 5) { 
     try {
@@ -221,9 +221,9 @@ router.get("/:id",cors(), async (req, res, next) => {
 
 //CREAR UN POKEMON en bd
 
-router.options("/", cors());
 
-router.post("/",cors(), async (req, res, next) => {
+
+router.post("/", async (req, res, next) => {
   try {
     const { name, hp, attack, defense,  speed,  height, weight, image, type, description, } = req.body; 
   
