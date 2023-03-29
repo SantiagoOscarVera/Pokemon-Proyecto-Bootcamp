@@ -221,6 +221,8 @@ router.get("/:id",cors(), async (req, res, next) => {
 
 //CREAR UN POKEMON en bd
 
+router.options("/", cors());
+
 router.post("/",cors(), async (req, res, next) => {
   try {
     const { name, hp, attack, defense,  speed,  height, weight, image, type, description, } = req.body; 
