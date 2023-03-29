@@ -36,7 +36,9 @@ const axios = require("axios")
 const {Op} = require("sequelize")
 const cors = require("cors")
 
-router.use(cors());
+router.use(cors({
+  origin: "https://pokemon-proyecto-bootcamp.vercel.app/"
+}));
 
 router.get("/", async (req, res, next) => {
     try {
