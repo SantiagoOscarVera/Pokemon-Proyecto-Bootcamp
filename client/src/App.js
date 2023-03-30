@@ -5,7 +5,7 @@ import Home from './Components/Home';
 import PokemonDetail from "./Components/PokemonDetail";
 import Form from './Components/Form';
 import axios from "axios";
-axios.defaults.baseURL = /* "https://pokemon-proyecto-bootcamp-production.up.railway.app/"; */ "https://pokemon-proyecto-bootcamp.vercel.app/"
+axios.defaults.baseURL =  "https://pokemon-proyecto-bootcamp-production.up.railway.app/"; 
 
 
 
