@@ -1,12 +1,11 @@
 const { Router} = require("express");
-const cors = require("cors")
 const router = Router()
 const {Type } = require("../db") 
 const axios = require("axios")
 const {Op} = require("sequelize")
 
 
-router.get("/", cors(),  async (req, res, next) => {
+router.get("/", async (req, res, next) => {
     try {
       let allTypes = await axios.get("https://pokeapi.co/api/v2/type"); 
       let todosTypes = allTypes.data.results; 
